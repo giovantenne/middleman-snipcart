@@ -1,0 +1,23 @@
+<h1><%= product.title %></h1>
+<div><%= product.description %></div>
+<div>
+  <strong><%= number_to_currency(product.price) %></strong>
+</div>
+<div>
+  <img src="<%=product.photo.url%>" />
+</div>
+
+
+<button
+    class="snipcart-add-item"
+    data-item-id="<%=product.id%>"
+    data-item-name="<%=product.title%>"
+    data-item-price="<%=product.price%>"
+    data-item-url="<%=current_page.url %>"
+    data-item-weight="20"
+    data-item-description="<%=product.description%>">
+        Buy now
+</button>
+
+
+
