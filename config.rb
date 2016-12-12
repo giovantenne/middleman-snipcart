@@ -18,7 +18,7 @@ page '/*.txt', layout: false
 
 # General configuration
 activate :dato,
-  token: '56d50e1b7499f07ddfed87475fbf396c7d9d556a4ce177ec95',
+  token: 'eba5c67e5115bd8b8d07f1f8d56878509560dfd2b8745128b1',
   base_url: 'http://www.mywebsite.com'
 
 
