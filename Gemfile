@@ -16,5 +16,6 @@ gem 'middleman-dato'
 gem 'shopify_api'
 gem 'byebug'
 gem 'mechanize'
+gem 'faraday'
 
 ruby '2.3.1'

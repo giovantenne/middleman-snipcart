@@ -205,6 +205,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  faraday
   mechanize
   middleman (>= 4.0.0)
   middleman-compass (>= 4.0.0)

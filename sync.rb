@@ -3,7 +3,7 @@ require "byebug"
 require "shopify_api"
 require 'mechanize'
 
-client = Dato::Site::Client.new("60fe1ed5c8bba61e8236d636fc2c0ab7b2c6a2053b5415f204")
+client = Dato::Site::Client.new("eba5c67e5115bd8b8d07f1f8d56878509560dfd2b8745128b1")
 loader = Dato::Local::Loader.new(client)
 loader.load
 dato = loader.items_repo
