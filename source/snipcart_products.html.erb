@@ -1,5 +1,6 @@
   <% config[:real_products].each do |p| %>
     <button
+        class="snipcart-add-item"
         data-item-id="<%=p.id%>"
         data-item-price="<%=p.price%>"
         data-item-url="<%=current_page.url %>"
