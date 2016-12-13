@@ -1,7 +1,7 @@
 <%
   list = []
   config[:real_products].map do |p|
-    list << { id: p.id, name: p.title, price: p.price.to_s, url: "http://assembler-deborah-50106.netlify.com/products.json"}
+    list << { id: p.id, name: p.title, price: p.price.to_s, "customFields": [], url: "http://assembler-deborah-50106.netlify.com/products.json"}
   end
 %>
 <%=list.to_json  %>
