@@ -2,5 +2,16 @@
 <div>
   <% config[:real_products].each do |p| %>
     <p><%= link_to p.title, "#{p.title.parameterize}.html" %></p>
+
+    <button
+        class="snipcart-add-item"
+        data-item-id="<%=p.id%>"
+        data-item-name="<%=p.title%>"
+        data-item-price="<%=p.price%>"
+        data-item-url="<%=current_page.url %>"
+        data-item-weight="20"
+        data-item-description="<%=p.description%>">
+            Buy now
+    </button>
   <% end %>
 </div>
