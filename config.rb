@@ -37,9 +37,11 @@ scps = conn.get do |req|
   req.headers['Accept'] = 'application/json'
 end
 real_products = []
+
 dato.products.each do |p| 
+  byebug
   scp =  JSON.parse(scps.body)["items"].select{|prod| prod["userDefinedId"] == p.id.to_s}.first
-  if !scp || scp["stock"].to_i > 0
+  if !scp || !scp["stock"] || scp["stock"].to_i > 0
     real_products << p
   end
 end
